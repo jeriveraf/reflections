@@ -1,0 +1,4 @@
+ git remote -v   #view remote repositories
+ git remote add origin git@github.com:riveraje/blah.git   #add a remote repo named origin
+ 
+ git push   #update remote repository

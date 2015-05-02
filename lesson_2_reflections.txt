@@ -1,2 +1,23 @@
 git init
 git add fileName
+
+get diff --staged
+
+
+git branch      #show branches
+git branch branchName    #create new branch
+git checkout branchName  #switch to branch or checkout
+git checkout -b branchName  #create and switch
+
+git log --graph --oneline branch1Name branch2Name
+
+git checkout master
+git merge branchName   #Merge branchName into master
+
+
+git show commit   #shows changes introduced by commit
+
+git branch -d coins  #deletes branch label, can be done after merging into another branch to unpollute the branch namespace
+
+
+
