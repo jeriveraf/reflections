@@ -1,0 +1,55 @@
+
+git log
+git diff firstCommit secondCommit
+
+git config --global core.editor "'C:/Program Files (x86)/Notepad++/notepad++.exe' -multiInst -notabbar -nosession -noPlugin"
+
+
+#Lesson 2
+git init
+git add fileName
+
+get diff --staged
+
+
+git branch      #show branches
+git branch branchName    #create new branch
+git checkout branchName  #switch to branch or checkout
+git checkout -b branchName  #create and switch
+
+git log --graph --oneline branch1Name branch2Name
+
+git checkout master
+git merge branchName   #Merge branchName into master
+
+
+git show commit   #shows changes introduced by commit
+
+git branch -d coins  #deletes branch label, can be done after merging into another branch to unpollute the branch namespace
+
+
+#Lesson 3
+git remote -v   #view remote repositories
+git remote add origin https://github.com/jeriveraf/reflections.git   #add a remote repo named origin
+ 
+git push --set-upstream origin master   #Push master to remote repository origin and set origin as the upstream of master
+git push   #update remote repository
+ 
+ 
+git config --global credential.helper wincred   #Save username and password
+ 
+git pull origin master   #Pull master branch from origin repository to local
+ 
+git fetch origin   #grab remote changes into local cache
+git log origin/master  #shows log of local cache remote
+ 
+ 
+#To have people review changes:  create branch, checkout branch, make changes, commit, push
+#Pull request in github let's you submit the changes for consideration
+ 
+git merge master different-oil  #merge master into different-oil
+ 
+
+ 
+
+

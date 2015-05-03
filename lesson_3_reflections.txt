@@ -1,4 +1,20 @@
  git remote -v   #view remote repositories
- git remote add origin git@github.com:riveraje/blah.git   #add a remote repo named origin
+ git remote add origin https://github.com/jeriveraf/reflections.git   #add a remote repo named origin
  
+ git push --set-upstream origin master   #Push master to remote repository origin and set origin as the upstream of master
  git push   #update remote repository
+ 
+ 
+ git config --global credential.helper wincred   #Save username and password
+ 
+ git pull origin master   #Pull master branch from origin repository to local
+ 
+ git fetch origin   #grab remote changes into local cache
+ git log origin/master  #shows log of local cache remote
+ 
+ 
+ #To have people review changes:  create branch, checkout branch, make changes, commit, push
+ #Pull request in github let's you submit the changes for consideration
+ 
+ git merge master different-oil  #merge master into different-oil
+ 
